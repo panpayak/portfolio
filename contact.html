@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="瀬戸口大悟のポートフォリオサイト。Webサイト制作・動画編集"
+    />
+    <meta name="Keywords" content="ポートフォリオ, Webサイト制作, 動画編集" />
+    <title>DAIGO SETOGUCHI PORTFOLIO</title>
+    <!-- icon -->
+    <link rel="shortcut icon" sizes="16x16" href="images/icon.png?20231023" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="images/icon.png?20231023"
+    />
+    <link rel="shortcut icon" sizes="192x192" href="images/icon.png?20231023" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css?20231023" />
+    <link rel="stylesheet" href="css/contact.css?20231023" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- header -->
+    <header>
+      <div class="h-logo">
+        <img src="images/main.png?20231023" alt="logo" />
+        <div class="h-logo-txt">
+          <p>
+            <span>D</span>AIGO<br />
+            <span>S</span>ETOGUCHI
+          </p>
+        </div>
+      </div>
+      <div class="h-nav">
+        <ul>
+          <li><a href="index.html?20231023">TOP</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- contact -->
+    <section class="c-sec" id="contact">
+      <h2><span>C</span>ONTACT</h2>
+      <div>
+        <p>
+          Webサイト制作・動画編集について何でもお気軽にご相談ください。<br />
+          お問い合わせお待ちしております。
+        </p>
+        <br />
+        <p>
+          以下のフォームに必要事項をご入力いただき、送信ボタンを押してください。<br />
+          （<span>*</span>マークは入力必須項目です）
+        </p>
+      </div>
+      <form method="POST" action="mail.php?20231023">
+        <label for="name">お名前</label>
+        <input type="text" name="お名前" id="name" placeholder="お名前" />
+        <label for="Email">メールアドレス</label>
+        <input
+          type="Email"
+          name="Email"
+          id="Email"
+          placeholder="メールアドレス"
+        />
+        <label for="phone">電話番号</label>
+        <input
+          type="phone"
+          name="your-phone"
+          id="phone"
+          placeholder="電話番号"
+        />
+        <label for="message">お問い合わせ内容</label>
+        <textarea
+          name="お問い合わせ内容"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="お問い合わせ内容"
+        ></textarea>
+        <button type="submit" value="確認">送信する</button>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div>
+        <small>© DAIGO SETOGUCHI 2023</small>
+      </div>
+    </footer>
+  </body>
+</html>

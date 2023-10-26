@@ -1,0 +1,172 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #2b2b2b;
+  letter-spacing: 2px;
+  overflow-x: hidden;
+}
+
+/* common */
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+.h-logo {
+  display: flex;
+  gap: 5px;
+}
+.h-logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.h-logo-txt {
+  margin: auto 0;
+  font-weight: bold;
+}
+.h-logo-txt span {
+  color: #ff814b;
+}
+.h-btn {
+  width: 30px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.h-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #2b2b2b;
+  position: absolute;
+}
+.h-btn span:first-of-type {
+  top: 30%;
+  transition: 0.2s;
+}
+.h-btn span:nth-of-type(2) {
+  top: 50%;
+  transition: 0.2s;
+}
+.h-btn span:last-of-type {
+  top: 70%;
+  transition: 0.2s;
+}
+.close span:first-of-type {
+  top: 50%;
+  transform: rotate(135deg);
+  transition: 0.2s;
+}
+.close span:nth-of-type(2) {
+  opacity: 0;
+  transition: 0.2s;
+}
+.close span:last-of-type {
+  top: 50%;
+  transform: rotate(-135deg);
+  transition: 0.2s;
+}
+.h-nav {
+  display: none;
+}
+
+/* hamburger */
+.h-menu {
+  position: fixed;
+  z-index: 100;
+  background-color: #f3f3f3;
+  top: -330px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.2s;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.h-menu li {
+  margin: 40px 0;
+}
+.h-sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.h-sns img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+.h-menu.open {
+  transform: translateY(100%);
+  transition: 0.2s;
+}
+
+/* formWrap */
+#formWrap {
+  margin-top: 150px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+input {
+  background-color: #2b2b2b;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+input:hover {
+  background-color: #ff814b;
+  transition: .3s;
+}
+
+/* footer */
+footer {
+  height: 90px;
+  line-height: 90px;
+  background-color: #ff814b;
+  color: white;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  /* common */
+
+  /* header */
+  header {
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 110px;
+  }
+  .h-btn {
+    display: none;
+  }
+  .h-nav {
+    display: block;
+  }
+  .h-nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    gap: 64px;
+  }
+  .h-menu {
+    display: none;
+  }
+}

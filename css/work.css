@@ -1,0 +1,144 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #2b2b2b;
+  letter-spacing: 2px;
+  overflow-x: hidden;
+}
+
+/* common */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+h2 span {
+  color: #ff814b;
+}
+a:hover {
+  color: #ff814b;
+  transition: 0.3s;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+.h-logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.h-logo img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.h-logo-txt {
+  margin: auto 0;
+  font-weight: bold;
+}
+.h-logo-txt span {
+  color: #ff814b;
+}
+.h-nav {
+  display: block;
+}
+.h-nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+  gap: 64px;
+}
+
+/* work */
+.w-sec {
+  margin: 70px auto 100px;
+  padding: 60px 40px 0;
+}
+.w-sec p {
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 0 40px;
+  font-size: 14px;
+}
+.w-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px 0;
+  margin-bottom: 64px;
+}
+strong {
+  margin-bottom: 20px;
+}
+.w-p-img,
+.w-m-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.w-p-img img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .3);
+}
+.w-m-img img {
+  width: 60%;
+  border: 1px solid rgba(0, 0, 0, .3);
+}
+
+/* footer */
+footer {
+  height: 90px;
+  line-height: 90px;
+  background-color: #ff814b;
+  color: white;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  /* common */
+  section {
+    max-width: 976px;
+  }
+  h2 {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  /* header */
+  header {
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 110px;
+  }
+  .h-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* work */
+  .w-sec {
+    margin: 100px auto 100px;
+  }
+  .w-imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 0;
+  }
+}

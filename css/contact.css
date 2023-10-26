@@ -1,0 +1,172 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #2b2b2b;
+  letter-spacing: 2px;
+  overflow-x: hidden;
+}
+
+/* common */
+section {
+  margin-bottom: 100px;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+h2 span {
+  color: #ff814b;
+}
+a:hover {
+  color: #ff814b;
+  transition: 0.3s;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+.h-logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.h-logo img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.h-logo-txt {
+  margin: auto 0;
+  font-weight: bold;
+}
+.h-logo-txt span {
+  color: #ff814b;
+}
+.h-nav {
+  display: block;
+}
+.h-nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+  gap: 64px;
+}
+
+/* contact */
+.c-sec {
+  margin-top: 100px;
+}
+.c-sec div {
+  margin-bottom: 30px;
+  padding: 0 40px;
+  line-height: 20px;
+}
+.c-sec p {
+  text-align: center;
+}
+.c-sec p:first-of-type {
+  font-weight: bold;
+}
+.c-sec p:last-of-type {
+  font-size: 12px;
+}
+.c-sec p span {
+  color: red;
+}
+form {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+label,
+input,
+textarea {
+  display: block;
+  padding: 25px 5px 10px;
+  width: 90%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+label::after {
+  content: "*";
+  color: red;
+}
+label:nth-of-type(3)::after {
+  content: "";
+}
+input,
+textarea {
+  border: 2px solid #2b2b2b;
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+.c-sec button {
+  color: white;
+  background-color: #2b2b2b;
+  display: block;
+  margin: 30px auto 0;
+  width: 300px;
+  height: 65px;
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 68px;
+}
+.c-sec button:hover {
+  background-color: #ff814b;
+  transition: 0.3s;
+}
+
+/* footer */
+footer {
+  height: 90px;
+  line-height: 90px;
+  background-color: #ff814b;
+  color: white;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  /* common */
+  section {
+    max-width: 976px;
+  }
+  h2 {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  /* header */
+  header {
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 110px;
+  }
+  .h-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* contact */
+  .c-sec {
+    margin: 200px auto 100px;
+    max-width: 710px;
+  }
+  .c-sec h2 {
+    margin-bottom: 50px;
+  }
+}
